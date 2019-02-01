@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Train Scheduler</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <!-- Custom CSS file -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Div containing the entire page -->
+  <div class="container">
+
+    <!-- Page Header -->
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Disney Express</h1>
+          <div>
+            <img src="assets\images\disney-parks.jpg" alt="Hogwards Station" class="stationPic">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">Current Train Schedule</h4>
+          </div>
+          <div class="panel-body">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Train Name</th>
+                  <th scope="col">Destination</th>
+                  <th scope="col">Frequency (min)</th>
+                  <th scope="col">Next Arrival</th>
+                  <th scope="col">Minutes Away</th>
+                </tr>
+              </thead>
+              <tbody id="trainInfo">
+                <!-- Trains will be listed here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add a new train -->
+    <div class="panel panel-primary">
+      <!-- Add a new train table header -->
+      <div class="panel-heading">
+        <h4 class="panel-title">Add a Train</h4>
+      </div>
+
+      <!-- Add a new train table content -->
+      <div class="panel-body">
+
+        <!-- Form that takes the user input for new trains -->
+        <form>
+          <div class="form-group">
+            <label>Train Name</label>
+            <input class="form-control" id="trainNameInput" type="text">
+          </div>
+          <div class="form-group">
+            <label>Destination</label>
+            <input class="form-control" id="destinationInput" type="text">
+          </div>
+          <div class="form-group">
+            <label>First Train Time (HH:mm - military time)</label>
+            <input class="form-control" id="trainStartTimeInput" type="text">
+          </div>
+          <div class="form-group">
+            <label>Frequency (minutes)</label>
+            <input class="form-control" id="frequencyInput" type="text">
+          </div>
+
+          <button class="btn" id="submit-btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Link to jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+    <!-- Link to AJAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+
+     <!-- Link to Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+
+    <!-- Link to Moment.js -->
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+
+    <!-- Link to the JavaScript -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+
+</html>

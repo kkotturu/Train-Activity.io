@@ -1,0 +1,29 @@
+body {
+    background-color: #b1b1b1;
+  }
+  .panel-title,.btn {
+    background-color: #eaf4f8;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .jumbotron {
+    margin-top: 10px;
+    border: 10px rgb(250, 246, 246) solid;
+    padding:0;
+    height:250px;
+  }
+  .stationPic {
+    max-width:100%;
+    width: 1090px;
+    margin: auto;
+    font-size: 24px;
+    height:180px;
+    padding-bottom: 5px;
+  }
+  
+  h1, th,tbody,.panel-body{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  h1, h4, th, tbody{
+    text-align: center;
+  }
+  
